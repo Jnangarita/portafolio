@@ -11588,3 +11588,10 @@ html {
     height: 40vw;
   }
 }
+
+/* Estilos personalizados */
+.email-container {
+  height: 2.5rem;
+  margin-top: 1rem;
+  width: 50%;
+}
