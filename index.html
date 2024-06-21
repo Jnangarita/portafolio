@@ -30,10 +30,11 @@
             class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-            <li class="nav-item"><a class="nav-link" href="index.html">Sobre mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Sobre mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skill">Habilidades</a></li>
             <li class="nav-item"><a class="nav-link" href="#!">Experiencia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Proyectos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#project">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -76,11 +77,11 @@
       </div>
     </header>
     <!-- About Section-->
-    <section class="bg-light py-5">
+    <section id="about" class="bg-light py-5">
       <div class="container px-5">
         <div class="row gx-5 justify-content-center">
           <div class="col-xxl-8">
-            <div class="my-5">
+            <div class="my-5 w-60">
               <h2 class="display-5 fw-bolder"><span class="d-inline">Sobre mi</span></h2>
               <p class="text-muted">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
@@ -93,8 +94,55 @@
         </div>
       </div>
     </section>
+    <!-- Skills Section-->
+    <section id="skill">
+      <div class="card shadow border-0 rounded-4 mb-5">
+        <div class="card-body p-5">
+          <!-- skills list-->
+          <div class="mb-5">
+            <div class="d-flex align-items-center mb-4">
+              <div class="feature bg-primary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+              <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Habilidades</span></h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 mb-4">
+              <div class="col mb-4 mb-md-0">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Java</div>
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div>
+              </div>
+              <div class="col">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Spring Boot</div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 mb-4">
+              <div class="col mb-4 mb-md-0">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MySQl</div>
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PostgreSQL</div>
+              </div>
+              <div class="col">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Git y GitHub</div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col mb-4 mb-md-0">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div>
+              </div>
+              <div class="col mb-4 mb-md-0">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div>
+              </div>
+              <div class="col">
+                <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Projects Section-->
-    <section class="py-5">
+    <section id="project" class="py-5">
       <div class="container px-5 mb-5">
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Proyectos</span></h1>
@@ -120,7 +168,7 @@
       </div>
     </section>
     <!-- Page content-->
-    <section class="py-5">
+    <section id="contact" class="py-5">
       <div class="container px-5">
         <!-- Contact form-->
         <div class="bg-light rounded-4 py-5 px-4 px-md-5">
