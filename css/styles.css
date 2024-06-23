@@ -3,7 +3,7 @@
   --bs-black: #000;
   --bs-white: #fff;
   --bs-gray: #6c757d;
-  --bs-primary: #1e30f3;
+  --bs-primary: #2A7AE4;
   --bs-secondary: #e21e80;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -2769,7 +2769,6 @@ textarea.form-control-lg {
 .btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
 }
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
@@ -8240,8 +8239,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: var(--bs-primary);
 }
 
 .bg-secondary {
@@ -11598,4 +11596,12 @@ html {
   height: 2.5rem;
   margin-top: 1rem;
   width: 50%;
+}
+
+.main-btn {
+  border: 1px solid var(--bs-primary);
+}
+
+.main-btn a {
+  color: var(--bs-primary);
 }
