@@ -32,7 +32,7 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
             <li class="nav-item"><a class="nav-link" href="#about">Sobre mi</a></li>
             <li class="nav-item"><a class="nav-link" href="#skill">Habilidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formation">Formación</a></li>
             <li class="nav-item"><a class="nav-link" href="#project">Proyectos</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
           </ul>
@@ -60,8 +60,11 @@
                 <button class="btn" id="copyBtn"><i class="bi bi-clipboard"></i></button>
               </div>
               <div class="d-flex gap-4 mt-3">
-                <a href="https://github.com/Jnangarita">GitHub <i class="bi bi-arrow-up-right"></i></a>
-                <a href="https://www.linkedin.com/in/john-angarita/">Linkedin <i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://github.com/Jnangarita" target="_blank">GitHub <i class="bi bi-arrow-up-right"></i></a>
+                <a href="https://www.linkedin.com/in/john-angarita/" target="_blank">Linkedin <i
+                    class="bi bi-arrow-up-right"></i></a>
+                <a href="storage/John Noel Angarita Ortiz.pdf" target="_blank">Hoja de vida <i
+                    class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -96,13 +99,12 @@
     </section>
     <!-- Skills Section-->
     <section id="skill">
-      <div class="card shadow border-0 rounded-4 mb-5">
-        <div class="card-body p-5">
+      <div class="container card border-0 rounded-4 mb-5">
+        <div class="card-body padding-2">
           <!-- skills list-->
           <div class="mb-5">
-            <div class="d-flex align-items-center mb-4">
-              <div class="feature bg-primary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-              <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Habilidades</span></h3>
+            <div class="d-flex align-items-center mb-4 justify-content-center">
+              <h2 class="fw-bolder mb-0 display-5"><span class="text-gradient d-inline">Habilidades</span></h2>
             </div>
             <div class="row row-cols-1 row-cols-md-3 mb-4">
               <div class="col mb-4 mb-md-0">
@@ -141,11 +143,38 @@
         </div>
       </div>
     </section>
+    <!-- Education Section-->
+    <section id="formation" class="bg-light">
+      <div class="container border-0 rounded-4 mb-5">
+        <div class="padding-2">
+          <div class="d-flex align-items-center mb-4 justify-content-center">
+            <h2 class="fw-bolder mb-4 display-5">Formación</h2>
+          </div>
+          <ul class="education">
+            <li>
+              <h3>Sena</h3>
+              <p>Programación de aplicaciones y servicios para la nube</p>
+              <p>2023 - 2024</p>
+            </li>
+            <li>
+              <h3>Oracle</h3>
+              <p>Java y Spring Boot <br> <span class="txt-transparent">(Oracle Next Education)</span></p>
+              <p>2023</p>
+            </li>
+            <li>
+              <h3>Universidad del Norte</h3>
+              <p>Diplomado de Desarrollo de Software y Aplicaciones Web</p>
+              <p>2021</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- Projects Section-->
     <section id="project" class="py-5">
       <div class="container px-5 mb-5">
         <div class="text-center mb-5">
-          <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Proyectos</span></h1>
+          <h2 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Proyectos</span></h2>
         </div>
         <div class="row gx-5 justify-content-center">
           <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -154,7 +183,7 @@
               <div class="card-body p-0">
                 <div class="d-flex align-items-center">
                   <div class="p-5">
-                    <h2 class="fw-bolder">Foro</h2>
+                    <h3 class="fw-bolder">Foro (Backend)</h3>
                     <p>
                       El proyecto es un foro de discusión desarrollado con Java
                       y el framework Spring Boot, utilizando OAuth0 para la
@@ -165,7 +194,7 @@
                       seguro.
                     </p>
                     <button class="btn main-btn">
-                      <a href="https://github.com/Jnangarita/forum-backend">Repositorio</a>
+                      <a href="https://github.com/Jnangarita/forum-backend" target="_blank">Repositorio</a>
                     </button>
                   </div>
                   <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
@@ -183,7 +212,7 @@
         <div class="bg-light rounded-4 py-5 px-4 px-md-5">
           <div class="text-center mb-5">
             <div class="feature bg-primary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-            <h1 class="fw-bolder">Get in touch</h1>
+            <h2 class="fw-bolder">Get in touch</h2>
             <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
           </div>
           <div class="row gx-5 justify-content-center">

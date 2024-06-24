@@ -11605,3 +11605,39 @@ html {
 .main-btn a {
   color: var(--bs-primary);
 }
+
+.padding-2 {
+  padding: 2.3rem;
+}
+
+.education {
+  padding-left: 0rem;
+}
+
+.education li {
+  border-color: #000000;
+  border-radius: 10px;
+  border-width: 2px;
+  border: 0.1rem solid #000000;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  text-align: center;
+  transition: 400ms;
+  vertical-align: top;
+  width: 30%;
+}
+
+.education li:hover {
+  border-color: var(--bs-primary);
+}
+
+.education h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.txt-transparent {
+  color: transparent;
+}
