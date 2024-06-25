@@ -1,5 +1,6 @@
 const email = document.getElementById("emailTxt").textContent;
 const copyBtn = document.getElementById("copyBtn");
+const API_URL = "https://formspree.io/f/mzzppjky";
 
 copyBtn.addEventListener("click", function () {
   copyToClipboard(email);
@@ -18,7 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   let form = event.target;
   let formData = new FormData(form);
 
-  fetch(form.action, {
+  fetch(`${API_URL}`, {
     method: form.method,
     body: formData,
     headers: {
@@ -44,5 +45,6 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     document.getElementById('errorModalLabel').textContent = 'Error';
     let errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
     errorModal.show();
+    console.error("Error al enviar el formulario: ", error);
   });
 });
