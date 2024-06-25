@@ -12,3 +12,37 @@ function copyToClipboard(text) {
     console.error("No se pudo copiar el texto: ", err);
   });
 }
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  let form = event.target;
+  let formData = new FormData(form);
+
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      form.reset();
+      let successModal = new bootstrap.Modal(document.getElementById('successModal'));
+      successModal.show();
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          document.getElementById('errorModalLabel').textContent = 'Error: ' + data.errors.map(error => error.message).join(', ');
+        } else {
+          document.getElementById('errorModalLabel').textContent = 'Error';
+        }
+        let errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+        errorModal.show();
+      });
+    }
+  }).catch(error => {
+    document.getElementById('errorModalLabel').textContent = 'Error';
+    let errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+    errorModal.show();
+  });
+});

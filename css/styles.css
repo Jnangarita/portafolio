@@ -218,7 +218,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-primary);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -1982,9 +1982,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #8f98f9;
+  border-color: var(--bs-primary);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(30, 48, 243, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(42, 122, 228, 0.5);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2805,10 +2805,10 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
+  --bs-btn-hover-bg: #1F5FB1;
   --bs-btn-hover-border-color: #1826c2;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
@@ -5109,7 +5109,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(30, 48, 243, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(42, 122, 228, 0.5);
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -11606,6 +11606,14 @@ html {
   color: var(--bs-primary);
 }
 
+.main-btn:hover {
+  background-color: var(--bs-primary);
+}
+
+.main-btn:hover a {
+  color: var(--bs-white);
+}
+
 .padding-2 {
   padding: 2.3rem;
 }
@@ -11630,7 +11638,7 @@ html {
 }
 
 .education li:hover {
-  border-color: var(--bs-primary);
+  border-radius: 0rem;
 }
 
 .education h3 {
