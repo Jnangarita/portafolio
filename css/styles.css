@@ -8856,17 +8856,11 @@ html {
 
 .main-btn {
   border: 1px solid var(--bs-primary);
-}
-
-.main-btn a {
   color: var(--bs-primary);
 }
 
 .main-btn:hover {
   background-color: var(--bs-primary);
-}
-
-.main-btn:hover a {
   color: var(--bs-white);
 }
 
@@ -8900,6 +8894,18 @@ html {
 .education h3 {
   font-size: 1.5rem;
   font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .education li {
+    display: block;
+    width: 100%;
+    margin-bottom: 2.3rem;
+  }
+
+  .txt-transparent {
+    display: none;
+  }
 }
 
 .txt-transparent {
