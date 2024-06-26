@@ -8,10 +8,30 @@ copyBtn.addEventListener("click", function () {
 
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text).then(function () {
-    console.log("Correo electrónico copiado:", text);
+    const icon = document.getElementById('btnIcon');
+    const message = document.getElementById('copyMessage');
+    const tooltip = document.getElementById('tooltipMessage');
+    updateIcon(icon, 'bi-clipboard', 'bi-check-lg');
+    toggleVisibility(message, 'inline');
+    toggleVisibility(tooltip, 'none');
+
+    setTimeout(function () {
+      updateIcon(icon, 'bi-check-lg', 'bi-clipboard');
+      toggleVisibility(tooltip, 'inline');
+      toggleVisibility(message, 'none');
+    }, 2000)
   }, function (err) {
-    console.error("No se pudo copiar el texto: ", err);
+    console.error("Error al copiar el texto: ", err);
   });
+}
+
+function updateIcon(icon, removeClass, addClass) {
+  icon.classList.remove(removeClass);
+  icon.classList.add(addClass);
+}
+
+function toggleVisibility(element, style) {
+  element.style.display = style;
 }
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
