@@ -162,6 +162,12 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+@media (max-width: 410px) {
+  a {
+    font-size: 0.9rem;
+  }
+}
+
 img {
   vertical-align: middle;
 }
@@ -8807,11 +8813,13 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    height: 60vw;
-    width: 60vw;
+    height: 50vw;
+    width: 50vw;
   }
+
   .profile .profile-img {
-    height: 65vw;
+    height: 50vw;
+    margin-top: 1.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -8906,6 +8914,14 @@ html {
   .txt-transparent {
     display: none;
   }
+
+  .email-container {
+    width: 57%;
+  }
+
+  .img-fluid {
+    display: none;
+  }
 }
 
 .txt-transparent {
@@ -8948,4 +8964,8 @@ html {
 .tooltip:hover .tooltiptext {
   opacity: 1;
   visibility: visible;
+}
+
+.pl-1 {
+  padding-left: 0.75rem;
 }
