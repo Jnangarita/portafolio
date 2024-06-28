@@ -6592,11 +6592,10 @@ html {
 }
 
 .profile {
-  height: 20vw;
-  max-height: 17rem;
-  max-width: 17rem;
+  height: 20rem;
+  margin-top: 1.5rem;
   position: relative;
-  width: 20vw;
+  width: 20rem;
 }
 
 .profile .profile-img {
