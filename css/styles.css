@@ -1373,7 +1373,12 @@ html {
 .email-container {
   height: 2.5rem;
   margin-top: var(--base-unit-rem);
-  width: 50%;
+  width: 41%;
+}
+
+.email-txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .copy-message {
@@ -1435,7 +1440,7 @@ html {
   }
 
   .email-container {
-    width: 75%;
+    width: 50%;
   }
 
   .img-fluid {
