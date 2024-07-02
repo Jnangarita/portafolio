@@ -1,5 +1,6 @@
 const email = document.getElementById("emailTxt").textContent;
 const copyBtn = document.getElementById("copyBtn");
+const scrollBtn = document.getElementById("goUpBtn");
 const API_URL = "https://formspree.io/f/mzzppjky";
 
 copyBtn.addEventListener("click", function () {
@@ -68,3 +69,18 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     console.error("Error al enviar el formulario: ", error);
   });
 });
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+function goTopPage() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

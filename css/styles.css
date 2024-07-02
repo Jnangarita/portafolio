@@ -1506,3 +1506,19 @@ html {
 .page-title:hover {
   color: var(--bs-primary);
 }
+
+.top-btn {
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  border: none;
+  bottom: 1rem;
+  color: var(--bs-white);
+  cursor: pointer;
+  display: none;
+  font-size: 1.7rem;
+  height: 4rem;
+  position: fixed;
+  right: 2rem;
+  width: 4rem;
+  z-index: 99;
+}
