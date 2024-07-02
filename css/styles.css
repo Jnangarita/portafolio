@@ -1495,6 +1495,14 @@ html {
   visibility: visible;
 }
 
+.tooltip:hover .bi-clipboard {
+  color: var(--bs-primary);
+}
+
 .pl-1 {
   padding-left: 0.75rem;
+}
+
+.page-title:hover {
+  color: var(--bs-primary);
 }
