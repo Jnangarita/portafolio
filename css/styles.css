@@ -1448,7 +1448,7 @@ html {
   }
 }
 
-@media (max-width: 421px) {
+@media (max-width: 450px) {
   .email-container {
     width: 100%;
   }
