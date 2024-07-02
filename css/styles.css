@@ -1440,11 +1440,17 @@ html {
   }
 
   .email-container {
-    width: 50%;
+    width: 55%;
   }
 
   .img-fluid {
     display: none;
+  }
+}
+
+@media (max-width: 421px) {
+  .email-container {
+    width: 100%;
   }
 }
 
