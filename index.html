@@ -34,7 +34,7 @@
             <li><a class="nav-link" href="#skill">Habilidades</a></li>
             <li><a class="nav-link" href="#formation">Formación</a></li>
             <li><a class="nav-link" href="#project">Proyectos</a></li>
-            <li><a class="nav-link" href="#contact">Contacto</a></li>
+            <!-- <li><a class="nav-link" href="#contact">Contacto</a></li> -->
           </ul>
         </div>
       </div>
@@ -74,7 +74,7 @@
             <!-- Header profile picture-->
             <div class="d-flex justify-content-center">
               <div class="profile">
-                <img class="profile-img" src="assets/avatar.png" alt="..." />
+                <img class="profile-img" src="assets/foto.jpeg" alt="..." />
               </div>
             </div>
           </div>
@@ -208,9 +208,8 @@
       </div>
     </section>
     <!-- Page content-->
-    <section id="contact" class="bg-light">
+    <!-- <section id="contact" class="bg-light">
       <div class="container px-5">
-        <!-- Contact form-->
         <div class="rounded-4 py-5 px-4 px-md-5">
           <div class="text-center mb-5">
             <h2 class="display-5 fw-bolder">Contacto</h2>
@@ -223,24 +222,18 @@
             <div class="col-lg-8 col-xl-6">
               <form id="contactForm" action="${API_URL}" method="POST">
                 <fieldset>
-                  <!-- Nombre input-->
                   <input class="form-control mb-3 p-3" type="text" name="contact-name" placeholder="Nombre completo"
                     required />
-                  <!-- Email input-->
                   <input class="form-control mb-3 p-3" type="email" name="contact-email"
                     placeholder="Correo electrónico" required />
-                  <!-- Asunto input-->
                   <input class="form-control mb-3 p-3" type="text" name="contact-issue" placeholder="Asunto" required />
-                  <!-- Mensaje input-->
                   <textarea class="form-control mb-3" rows="5" cols="30" type="text" name="contact-message"
                     placeholder="Mensaje" required></textarea>
-                  <!-- Submit Button-->
                   <div class="d-grid">
                     <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
                   </div>
                 </fieldset>
               </form>
-              <!-- Modal de Éxito -->
               <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -258,7 +251,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Modal de Error -->
               <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -281,7 +273,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <button onclick="goTopPage()" class="btn btn-primary top-btn" id="goUpBtn"><i class="bi bi-arrow-up"></i></button>
   </main>
   <!-- Footer-->
